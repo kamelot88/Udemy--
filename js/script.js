@@ -1,19 +1,40 @@
-"use sctrict";
+"use strict";
 
-let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-const mpersonalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false,
-};
+//! Условия If
+if (4 == 9) {
+    console.log('Ok');
+} else {
+    console.log('error');
+}
 
-const lastFilm1 = prompt('Один из последних просмотренных фильмов?', '');
-const reytingFilm1 = prompt('На сколько оцените его?');
-const lastFilm2 = prompt('Один из последних просмотренных фильмов?', '');
-const reytingFilm2 = prompt('На сколько оцените его?');
-mpersonalMovieDB.movies[lastFilm1] = reytingFilm1;
-mpersonalMovieDB.movies[lastFilm2] = reytingFilm2;
+const numb = 50;
 
-console.log(mpersonalMovieDB);
+if (numb < 49) {
+    console.log('error')
+} else if (numb > 100) {
+    console.log('Много')
+} else {
+    console.log('Ok');
+}
+
+//! Тернарный оператор
+const num = 50;
+(num == 50) ? console.log('Ok') : console.log('Error');
+
+
+//! Конструкция switch
+const  nam = 55;
+switch (nam) {
+    case 49:
+        console.log('Неверно');
+        break;
+    case 100:
+        console.log('Неверно');
+        break;
+    case 50:
+        console.log('Верно');
+        break;
+    default:
+        console.log('Не в этот раз');
+        break;
+}
