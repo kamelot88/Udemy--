@@ -1,18 +1,19 @@
 "use sctrict";
 
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const mpersonalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false,
+};
 
-let incr = 10,
-    decr = 10;
+const lastFilm1 = prompt('Один из последних просмотренных фильмов?', '');
+const reytingFilm1 = prompt('На сколько оцените его?');
+const lastFilm2 = prompt('Один из последних просмотренных фильмов?', '');
+const reytingFilm2 = prompt('На сколько оцените его?');
+mpersonalMovieDB.movies[lastFilm1] = reytingFilm1;
+mpersonalMovieDB.movies[lastFilm2] = reytingFilm2;
 
-
-    console.log(++incr);
-    console.log(--decr);
-
-    console.log(5%2);
-
-    console.log(2+2*2 != 8);
-
-    const isChecked = false,
-        isClose = false;
-
-        console.log(isChecked || !isClose);
+console.log(mpersonalMovieDB);
