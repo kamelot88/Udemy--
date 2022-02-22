@@ -1,40 +1,39 @@
 "use strict";
 
-//! Условия If
-if (4 == 9) {
-    console.log('Ok');
-} else {
-    console.log('error');
+//! Циклы
+
+let num = 50;
+
+while (num <= 55) {
+    console.log(num);
+    num++;
 }
 
-const numb = 50;
 
-if (numb < 49) {
-    console.log('error')
-} else if (numb > 100) {
-    console.log('Много')
-} else {
-    console.log('Ok');
+
+
+let numb = 50;
+do {
+    console.log(numb);
+    numb++;
+}
+while (numb < 55);
+
+
+
+let number = 50;
+for (let i = 1; i < 10; i++) {
+    if (i === 6) {
+        break; //? остановит выполнение цикла при достижении переменной i значения "6"
+    }
+    console.log(i);
 }
 
-//! Тернарный оператор
-const num = 50;
-(num == 50) ? console.log('Ok') : console.log('Error');
 
-
-//! Конструкция switch
-const  nam = 55;
-switch (nam) {
-    case 49:
-        console.log('Неверно');
-        break;
-    case 100:
-        console.log('Неверно');
-        break;
-    case 50:
-        console.log('Верно');
-        break;
-    default:
-        console.log('Не в этот раз');
-        break;
+let lit = 50;
+for (let i = 1; i < 10; i++) {
+    if (i === 6) {
+        continue; //? пропустит выполнение кода при достижении переменной i значения "6", после чего продолжит выполнение кода со следующего цикла
+    }
+    console.log(i);
 }
