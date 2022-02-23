@@ -35,3 +35,9 @@ const logger = function() {
 logger();
 
 //! Стрелочная функция
+const calct = (a, b) => a + b; //? Если тело функции в одну строку, то можно не ставить фигурные скобки {}
+
+const calcte = (a, b) => {
+console.log('1');
+return a + b;
+};
